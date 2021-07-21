@@ -40,7 +40,6 @@ grep -i HDAC1 example.gff
 ~~~
 {: .language-bash }
 
-~~~
 > ## Finding HDACs
 > Find every instance of a histone deacetylase (HDAC) in the file,
 > based on the gene name.
@@ -140,6 +139,13 @@ Only seven characters now - that's much better! All lower case letters can be ma
 
 > ## Exercise 2.2
 > a) In total, how many lines mention HDAC 1-5 in `example.gff`?
+>
+> > ## Solution
+> >
+> > 82 (using the regex `Name=HDAC[1-5][^0-9]`)
+> >
+> {: .solution }
+>
 > b) Which of the following expressions could you use to match any four-letter word beginning with an uppercase letter, followed by two vowels, and ending with 'd'?
 >
 > ~~~
@@ -153,7 +159,24 @@ Only seven characters now - that's much better! All lower case letters can be ma
 > ~~~
 > {: .source }
 >
+> > ## Solution
+> >
+> > Option iii) fits the description.
+> > You might also have chosen option ii),
+> > which would match the described pattern,
+> > but also other non-vowel letters in the middle two positions.
+> >
+> {: .solution }
+>
 > c) Try playing around with the character ranges that you have learned above. What does `[A-z]` evaluate to? What about `[a-Z]`? Can you create a range that covers all letter and number characters?
+>
+> > ## Solution
+> >
+> > `[A-z]` matches all letter characters (both upper and lower case).
+> > `[a-Z]` is an invalid set.
+> > `[A-9]` will match any letter or digit character.
+> >
+> {: .solution}
 {: .challenge }
 
 Ranges don't have to include the whole alphabet or every digit - we can match only the second half of the alphabet with
@@ -198,4 +221,19 @@ will match '2010', '201K', '201j', etc, but not '2012', '2016', or '2019'. In co
 
 > ## Exercise 2.3
 > Use an inverted set to only match the human autosomes (chr1-22), i.e. filtering out chromosomes chrX, chrY and chrM. How many records with autosomes can you find in file `example.gff`?
+>
+> > ## Solution
+> >
+> > ~~~
+> > chr[^XYM]
+> > ~~~
+> > {: .source }
+> >
+> > There are 897 records matching this regular expression.
+> > In fact, there are only 895 lines beginning with `chr[^XYZ]`,
+> > but two other lines also match the regex above because they contain the string 'chromosome'.
+> > To avoid matching these, anchor the regex to the beginning of the line with `^`
+> > i.e. `^chr[^MXY]` (see chapter 3).
+> >
+> {: .solution }
 {: .challenge }
