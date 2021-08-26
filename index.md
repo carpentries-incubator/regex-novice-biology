@@ -32,7 +32,12 @@ For a comprehensive overview of regular expressions, we highly recommend the exc
 
 > ## Prerequisites
 >
-> FIXME
+> To follow this lesson, learners should know how to open a text file on their computer,
+> and some familiarity with the _Find/Replace_ functionality
+> available in most text editing tools will be beneficial.
+> The examples used will feel most relevant to those who are familiar with common file formats
+> used to represent biological data, and some knowledge of sequence biology
+> (DNA/RNA and protein sequences) is assumed.
 {: .prereq}
 
 {% include links.md %}
