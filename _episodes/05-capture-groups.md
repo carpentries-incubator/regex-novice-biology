@@ -3,12 +3,13 @@ title: Capture Groups and References
 teaching: 0
 exercises: 0
 questions:
-- "question 1? (FIXME)"
-- "question 2? (FIXME)"
+- "How can I reuse parts of the matched pattern when I replace it?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Compose regular expressions that include capture groups."
+- "Compose replacement strings that include characters captured in a regular expression."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Capture groups are defined within `()` in a regular expression."
+- "The left-most capture group in a regular expression is referred to with `\\1` in the replacement string, the next with `\\2`, and so on."
 ---
 
 One of the most common uses of regular expressions is in string replacement, or substitution, where the patterns found will be replaced by some other string - this usage is similar again to the 'Find and Replace' functionality of word processors that we mentioned in the introduction. Beyond the potential for "fuzzy" finding, a major advantage that regular expressions provide in this context is that they allow all or part(s) of the matched string to be re-used in the replacement. This means matched patterns can be rearranged, added to, and given new context, without the need for prior knowledge of the specific pattern that will be found.
@@ -190,7 +191,7 @@ to the desired format:
 > The file `example_protein_malformed.fasta` is missing the `>` character at the beginning of the headers. Use a capture group to add them.
 >
 > > ## Solution
-> > 
+> >
 > > Use the regex `^(ENSP\d.+)` and substitute with `>\1`.
 > >
 > > Note that we explicitly match a digit character `\d`.

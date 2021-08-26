@@ -3,12 +3,16 @@ title: Repeated Matches
 teaching: 0
 exercises: 0
 questions:
-- "question 1? (FIXME)"
-- "question 2? (FIXME)"
+- "How can I define a character or set that appears multiple times in a pattern?"
+- "How can I define the maximum and minimum number of times a character or set should appear in the pattern?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Choose the appropriate modifier to optionally or repeatedly match a given character or set."
+- "Compose a regular expression that will match a character appearing between two and five times in succession."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "`?` indicates that the preceding character or set should be treated as optional in this position."
+- "`*` indicates that the preceding character or set should appear 0 or more times in this position."
+- "`+` indicates that the preceding character or set should appear 1 or more times in this position."
+- "`{2,4}` indicates that the preceding character or set should appear at least twice but no more than four times in this position."
 ---
 
 Now that we've learned how to account for uncertainty of the characters that should be matched by a regex, it's time to focus on how to account for uncertainty in the *length* of the patterns that we would like to match.

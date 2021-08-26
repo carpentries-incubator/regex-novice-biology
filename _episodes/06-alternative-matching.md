@@ -3,12 +3,11 @@ title: Alternative Matches
 teaching: 0
 exercises: 0
 questions:
-- "question 1? (FIXME)"
-- "question 2? (FIXME)"
+- "How can I define multiple possible strings that can be matched in a regular expression?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Compose regular expressions to match several different strings."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Alternative strings to match can be combined with `|`."
 ---
 
 So far, we've seen how to perform very specific matching - literal string matching, using wildcards to match the same thing multiple times, etc - and how to match every substring that fits a particular pattern - e.g. all strings of at least six digits, every line starting or ending with a particular character, etc - but what if we only want to match under a limited number of set circumstances? For an example,consider again the FASTA file introduced in the previous chapter, a sample of which is reproduced below:

@@ -3,12 +3,16 @@ title: "Regex Fundamentals"
 teaching: 0
 exercises: 0
 questions:
-- "question 1? (FIXME)"
-- "question 2? (FIXME)"
+- "How can I search for sets of characters in a text file?"
+- "How can I specify ranges of characters in a search?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Compose regular expressions to match patterns in text."
+- "Specify sets and ranges of characters to include in a search."
+- "Use inverted matches to exclude particular characters from a search."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Wrap characters in `[]` to define a set of valid matches for a given position."
+- "Use `-` between two characters to define a range of characters to match."
+- "`^` at the start of a set to invert it, indicating that the given characters should be excluded from a match."
 ---
 
 ## Basic String Matching

@@ -3,12 +3,18 @@ title: Tokens and Wildcards
 teaching: 0
 exercises: 0
 questions:
-- "question 1? (FIXME)"
-- "question 2? (FIXME)"
+- "How can I specify that patterns should only match as whole words or whole lines?"
+- "How can I only match patterns that appear at the very beginning or very end of a line?"
+- "How can I specify positions in a pattern that could match any character?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Compose regular expressions that include tokens to match particular classes of character."
+- "Describe the risks associated with using tokens and wildcards that match many characters."
+- "Modify a regular expression to match only strings that appear at the start or end of a line or word."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Use the `\b` token to match a word boundary, and `^` and `$` to match the beginning and end of a line respectively."
+- "`\\` has special meaning in regular expressions, and `\\\\` should be used to specify a literal backslash in a pattern."
+- "`.` describes a position that could match any character."
+- "When composing a regular expression, it is good practice to be as specific as possible about what you want to match."
 ---
 
 ## Referencing multiple characters
