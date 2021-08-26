@@ -6,9 +6,13 @@ questions:
 - "What is a regular expression?"
 - "In what programs can I use regular expessions?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Explain that regular expressions are a way of describing patterns in text."
+- "Describe circumstances where a regular expression search could be helpful."
+- "Access the regular expression search function of a text editor."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Regular expressions are a way of describing patterns in text."
+- "Most text editors and many other tools include a regular expression engine for performing these kinds of searches."
+- "Regular expressions are often offered as a mode of find/replace that can be turned on and off by the user."
 ---
 
 ## What is a regular expression?
