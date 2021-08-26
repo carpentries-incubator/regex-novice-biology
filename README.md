@@ -50,5 +50,5 @@ To cite this lesson, please consult with [CITATION](CITATION)
 [cdh-topic-tags]: https://cdh.carpentries.org/the-carpentries-incubator.html#topic-tags
 [change-default-branch]: https://docs.github.com/en/github/administering-a-repository/changing-the-default-branch
 [community-lessons]: https://carpentries.org/community-lessons
-[issues]: https://github.com/tobyhodges/regex-novice-biology/issues/
+[issues]: https://github.com/carpentries-incubator/regex-novice-biology/issues/
 [lesson-example]: https://carpentries.github.io/lesson-example
